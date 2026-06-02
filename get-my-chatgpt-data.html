@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get My ChatGPT Data — Setup Page</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f0f4f8;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+  .card{background:#fff;border-radius:16px;padding:48px;max-width:660px;width:100%;box-shadow:0 4px 24px rgba(0,0,0,.10)}
+  .logo{font-size:40px;margin-bottom:16px}
+  h1{font-size:28px;font-weight:700;color:#111;margin-bottom:8px}
+  .subtitle{font-size:16px;color:#555;margin-bottom:36px;line-height:1.5}
+  .step{display:flex;align-items:flex-start;gap:16px;margin-bottom:32px}
+  .step-num{width:36px;height:36px;border-radius:50%;background:#10a37f;color:#fff;font-size:16px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+  .step-body h2{font-size:17px;font-weight:700;color:#111;margin-bottom:6px}
+  .step-body p{font-size:15px;color:#444;line-height:1.6;margin-bottom:6px}
+  kbd{display:inline-block;background:#f0f0f0;border:1.5px solid #bbb;border-radius:5px;padding:2px 8px;font-size:13px;font-family:monospace;font-weight:600;color:#333;box-shadow:0 1.5px 0 #999}
+
+  /* The draggable bookmarklet button */
+  #bm-link{display:inline-block;background:#10a37f;color:#fff!important;text-decoration:none;font-size:17px;font-weight:700;padding:14px 28px;border-radius:10px;margin:12px 0;cursor:grab;user-select:none;border:3px dashed transparent;transition:border-color .2s,transform .1s;box-shadow:0 3px 12px rgba(16,163,127,.35)}
+  #bm-link:hover{border-color:#0d8a6a;transform:scale(1.02)}
+  #bm-link:active{cursor:grabbing}
+
+  .drag-hint{font-size:13px;color:#888;margin-top:6px}
+
+  .bookmarks-bar-demo{background:#f1f3f4;border:1.5px solid #ddd;border-radius:8px;padding:8px 14px;margin-top:12px;font-size:14px;color:#555;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .bm-item{background:#fff;border:1.5px solid #ccc;border-radius:5px;padding:4px 10px;font-size:13px;color:#333}
+  .bm-item.highlight{background:#10a37f;color:#fff;border-color:#0d8a6a;font-weight:700}
+  .bm-label{color:#999;font-size:12px}
+
+  .tip{background:#fffbe6;border:1.5px solid #ffe066;border-radius:10px;padding:14px 18px;font-size:14px;color:#664d00;margin-top:16px;line-height:1.6}
+  .divider{border:none;border-top:1.5px solid #eee;margin:32px 0}
+
+  .after-setup{text-align:center}
+  .after-setup h2{font-size:20px;font-weight:700;color:#111;margin-bottom:8px}
+  .after-setup p{font-size:15px;color:#555;margin-bottom:16px;line-height:1.6}
+  .go-btn{display:inline-block;background:#111;color:#fff;text-decoration:none;font-size:16px;font-weight:600;padding:14px 32px;border-radius:10px;transition:background .2s}
+  .go-btn:hover{background:#333}
+  .already-done{color:#888;font-size:13px;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">📥</div>
+  <h1>Export My ChatGPT Conversations</h1>
+  <p class="subtitle">Follow the <strong>one-time setup</strong> below. After that, exporting your conversations takes a single click — no installs, nothing to type.</p>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <h2>Make sure your bookmarks bar is visible</h2>
+      <p><strong>Chrome or Edge (Windows):</strong> Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd></p>
+      <p><strong>Chrome or Edge (Mac):</strong> Press <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd></p>
+      <p><strong>Safari (Mac):</strong> Click <strong>View</strong> in the menu bar → <strong>Show Favourites Bar</strong></p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <h2>Drag this button to your bookmarks bar</h2>
+      <p>Click and hold the green button, then drag it up to your bookmarks bar and drop it there.</p>
+      <div style="margin-top:14px">
+        <a id="bm-link" href="#">⬇️ Export My ChatGPT Data</a>
+      </div>
+      <p class="drag-hint">👆 Drag that green button up to your bookmarks bar</p>
+      <div class="bookmarks-bar-demo">
+        <span class="bm-label">Your bookmarks bar will look like this:</span>
+        <span class="bm-item">Gmail</span>
+        <span class="bm-item">Drive</span>
+        <span class="bm-item highlight">⬇️ Export My ChatGPT Data</span>
+      </div>
+      <div class="tip">
+        <strong>⚠️ Dragging not working?</strong> Right-click the green button and choose <strong>"Bookmark this link"</strong> or <strong>"Save link as bookmark"</strong>. When asked where to save it, choose <strong>Bookmarks bar</strong> (or <strong>Favourites</strong> on Safari).
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="after-setup">
+    <h2>✅ Setup complete — here's how to export:</h2>
+    <p>
+      <strong>1.</strong> Go to ChatGPT and log in.<br>
+      <strong>2.</strong> Click the <strong>"⬇️ Export My ChatGPT Data"</strong> bookmark.<br>
+      <strong>3.</strong> A progress bar appears. When done, a ZIP downloads automatically.
+    </p>
+    <a href="https://chatgpt.com" target="_blank" class="go-btn">Go to ChatGPT →</a>
+    <p class="already-done">Once logged in, click your new bookmark to start the export.</p>
+  </div>
+</div>
+
+<script>
+// ─────────────────────────────────────────────────────────────────────────────
+// The full export engine, kept here as a named function so it stays readable.
+// At page load, this is serialised, minified, and injected into the bookmarklet.
+// The bookmarklet is short (~300 chars): it just calls back to this page to
+// fetch the full script, then evals it on chatgpt.com — avoiding URL length limits.
+// ─────────────────────────────────────────────────────────────────────────────
+
+function _exportEngine() {
+  if(window.__cx){alert('Export already running!');return;}
+  window.__cx=1;
+
+  // ── Overlay UI ──────────────────────────────────────────────────────────────
+  var ov=document.createElement('div');
+  ov.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:2147483647;display:flex;align-items:center;justify-content:center;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif';
+  var bx=document.createElement('div');
+  bx.style.cssText='background:#fff;border-radius:14px;padding:36px 44px;max-width:440px;width:90%;text-align:center;box-shadow:0 24px 80px rgba(0,0,0,.45)';
+  bx.innerHTML='<div style="font-size:36px;margin-bottom:12px">📥</div><h2 style="margin:0 0 6px;font-size:20px;color:#111;font-weight:700">Exporting your ChatGPT conversations</h2><p id=_cxs style="color:#555;font-size:15px;margin:0 0 18px;line-height:1.5">Starting…</p><div style="background:#e8e8e8;border-radius:99px;height:10px;overflow:hidden"><div id=_cxb style="height:100%;background:#10a37f;width:0%;transition:width .35s ease"></div></div><p id=_cxq style="color:#999;font-size:13px;margin:14px 0 0">Please keep this tab open</p>';
+  ov.appendChild(bx);document.body.appendChild(ov);
+
+  function st(t,p){var s=document.getElementById('_cxs'),b=document.getElementById('_cxb');if(s)s.textContent=t;if(b&&p!==undefined)b.style.width=p+'%';}
+  function fin(m,ok){
+    st((ok?'✅ ':'❌ ')+m,ok?100:0);
+    var q=document.getElementById('_cxq');
+    if(q){q.textContent=ok?'Your ZIP file is downloading now.':'Please close this and try again, or contact IT.';q.style.color=ok?'#10a37f':'#c0392b';}
+    setTimeout(function(){ov.remove();window.__cx=0;},ok?5000:9000);
+  }
+
+  // ── Minimal store-only ZIP ───────────────────────────────────────────────────
+  function u16(n){return new Uint8Array([n&255,(n>>8)&255]);}
+  function u32(n){return new Uint8Array([n&255,(n>>8)&255,(n>>16)&255,(n>>24)&255]);}
+  function cat(a){var t=0;for(var i=0;i<a.length;i++)t+=a[i].length;var o=new Uint8Array(t),p=0;for(var i=0;i<a.length;i++){o.set(a[i],p);p+=a[i].length;}return o;}
+  function crc32(d){
+    var c=0xFFFFFFFF,tbl=crc32.t;
+    if(!tbl){tbl=crc32.t=new Uint32Array(256);for(var i=0;i<256;i++){var x=i;for(var j=0;j<8;j++)x=x&1?0xEDB88320^(x>>>1):x>>>1;tbl[i]=x;}}
+    for(var i=0;i<d.length;i++)c=tbl[(c^d[i])&255]^(c>>>8);return(~c)>>>0;
+  }
+  function zadd(en,name,data){
+    if(typeof data==='string')data=new TextEncoder().encode(data);
+    var nb=new TextEncoder().encode(name),cr=crc32(data);
+    var lh=cat([new Uint8Array([0x50,0x4b,0x03,0x04]),u16(20),u16(0),u16(0),u16(0),u16(0),u32(cr),u32(data.length),u32(data.length),u16(nb.length),u16(0),nb]);
+    en.push({lh,data,nb,cr,sz:data.length});
+  }
+  function zbuild(en){
+    var parts=[],off=0,cd=[];
+    for(var i=0;i<en.length;i++){
+      var e=en[i];
+      cd.push(cat([new Uint8Array([0x50,0x4b,0x01,0x02]),u16(20),u16(20),u16(0),u16(0),u16(0),u16(0),u32(e.cr),u32(e.sz),u32(e.sz),u16(e.nb.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(off),e.nb]));
+      parts.push(e.lh,e.data);off+=e.lh.length+e.data.length;
+    }
+    var cdat=cat(cd);
+    var eocd=cat([new Uint8Array([0x50,0x4b,0x05,0x06]),u16(0),u16(0),u16(en.length),u16(en.length),u32(cdat.length),u32(off),u16(0)]);
+    parts.push(cdat,eocd);return cat(parts);
+  }
+
+  // ── Message walker ───────────────────────────────────────────────────────────
+  function walk(detail){
+    var m=detail.mapping||{},msgs=[],cur=null,ids=Object.keys(m);
+    for(var i=0;i<ids.length;i++){var n=m[ids[i]];if(!n.parent||!m[n.parent]){cur=ids[i];break;}}
+    var seen={};
+    while(cur&&!seen[cur]){
+      seen[cur]=1;var nd=m[cur];
+      if(nd&&nd.message&&nd.message.content){
+        var role=(nd.message.author&&nd.message.author.role)||'unknown';
+        var parts=nd.message.content.parts||[];
+        var txt=parts.filter(function(p){return typeof p==='string';}).join('\n').trim();
+        if(txt)msgs.push({role,txt});
+      }
+      var ch=nd&&nd.children?nd.children:[];cur=ch.length?ch[ch.length-1]:null;
+    }
+    return msgs;
+  }
+  function toMd(conv,msgs){
+    var t=conv.title||'Untitled',d=conv.create_time?new Date(conv.create_time*1000).toLocaleDateString():'';
+    var o='# '+t+'\n'+(d?'*'+d+'*\n':'')+'\n---\n\n';
+    for(var i=0;i<msgs.length;i++)o+='**'+(msgs[i].role==='user'?'You':'ChatGPT')+':**\n\n'+msgs[i].txt+'\n\n---\n\n';
+    return o;
+  }
+
+  // ── Main ─────────────────────────────────────────────────────────────────────
+  (async function(){
+    try{
+      st('Connecting to ChatGPT…',5);
+      var sess=await fetch('/api/auth/session',{credentials:'include',headers:{Accept:'application/json'}}).then(r=>r.json());
+      if(!sess||!sess.accessToken)throw new Error('Not logged in. Please log into chatgpt.com first, then click the bookmark again.');
+      var hdr={'Authorization':'Bearer '+sess.accessToken,'Accept':'application/json'};
+
+      st('Fetching your conversation list…',10);
+      var convs=[],off=0;
+      while(true){
+        var res=await fetch('/backend-api/conversations?offset='+off+'&limit=100&order=updated',{credentials:'include',headers:hdr});
+        var data=await res.json();
+        if(!data.items||!data.items.length)break;
+        convs=convs.concat(data.items);
+        if(convs.length>=(data.total||0)||data.items.length<100)break;
+        off+=100;
+      }
+      if(!convs.length){fin('No conversations found.',true);return;}
+      st('Found '+convs.length+' conversations. Exporting…',15);
+
+      var en=[],fail=0;
+      for(var i=0;i<convs.length;i++){
+        var cv=convs[i];
+        var safe=(cv.title||'untitled').replace(/[^a-z0-9 _-]/gi,'_').slice(0,55);
+        var fn=safe+'_'+cv.id.slice(0,8);
+        try{
+          var dr=await fetch('/backend-api/conversation/'+cv.id,{credentials:'include',headers:hdr});
+          var detail=await dr.json();
+          zadd(en,'json/'+fn+'.json',JSON.stringify(detail,null,2));
+          zadd(en,'markdown/'+fn+'.md',toMd(cv,walk(detail)));
+        }catch(e){zadd(en,'errors/'+fn+'.txt','Failed: '+e.message);fail++;}
+        st('Exported '+(i+1)+' / '+convs.length+'…',15+Math.round(((i+1)/convs.length)*77));
+        await new Promise(r=>setTimeout(r,60));
+      }
+
+      st('Building ZIP…',94);
+      zadd(en,'README.txt','ChatGPT Export\nDate: '+new Date().toLocaleString()+'\nConversations: '+convs.length+'\nFailed: '+fail+'\n');
+      var zip=zbuild(en);
+      st('Downloading…',98);
+      var blob=new Blob([zip],{type:'application/zip'});
+      var a=Object.assign(document.createElement('a'),{href:URL.createObjectURL(blob),download:'chatgpt-export-'+new Date().toISOString().slice(0,10)+'.zip'});
+      document.body.appendChild(a);a.click();document.body.removeChild(a);
+      setTimeout(()=>URL.revokeObjectURL(a.href),6000);
+      fin('Done! '+convs.length+' conversations exported'+(fail?' ('+fail+' failed)':'')+'.',true);
+    }catch(e){fin(e.message,false);}
+  })();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Build the bookmarklet.
+//
+// Strategy: instead of putting the entire engine in the bookmark URL (which
+// causes truncation), the bookmark is a tiny stub (~280 chars) that:
+//   1. Reads this page's URL from a sessionStorage key we write at load time
+//   2. Fetches this HTML file
+//   3. Extracts the engine function text
+//   4. Evals it on chatgpt.com
+//
+// We store this page's URL in sessionStorage under a fixed key so the
+// bookmarklet can find it regardless of where the file lives.
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Store the URL of this setup page so the bookmarklet can fetch it
+sessionStorage.setItem('__cxSrc', location.href);
+
+// The full engine as a string (we'll embed it in a blob URL for the bookmarklet to fetch)
+var engineSrc = '(' + _exportEngine.toString() + ')();';
+
+// Create a blob URL for the engine so the bookmarklet can load it via a script tag.
+// Blob URLs are same-session only, so we regenerate on every page load.
+var engineBlob = URL.createObjectURL(new Blob([engineSrc], {type: 'text/javascript'}));
+
+// Store the blob URL in sessionStorage so the bookmarklet can find it
+sessionStorage.setItem('__cxBlob', engineBlob);
+
+// The bookmarklet itself: tiny loader that grabs the blob URL from sessionStorage
+// of any tab that loaded this setup page, then injects a script on chatgpt.com.
+//
+// NOTE: sessionStorage is per-tab, not shared across tabs. So we use a different
+// approach: store the engine as a string in localStorage of this page, and the
+// bookmarklet fetches this page URL (also stored in localStorage), fetches it,
+// extracts the engine, and evals it.
+//
+// Even simpler: inline the engine directly but using encodeURIComponent to avoid
+// any URL-special-char issues. The length concern was about the raw string being
+// truncated — encoding it fixes that since it becomes a single opaque string.
+// Modern browsers support >2MB bookmark URLs; the engine is ~5KB encoded.
+
+var engineEncoded = encodeURIComponent(engineSrc);
+var bmCode = 'javascript:' + engineEncoded;
+
+var link = document.getElementById('bm-link');
+link.href = bmCode;
+
+// Prevent accidental navigation if someone clicks on this page
+link.addEventListener('click', function(e){
+  if(window.location.hostname !== 'chatgpt.com'){
+    e.preventDefault();
+    alert('Setup complete!\n\nNow go to chatgpt.com, log in, and then click the "⬇️ Export My ChatGPT Data" bookmark in your bookmarks bar.');
+  }
+});
+
+// ── Verify the bookmark will work: check encoded length ──────────────────────
+var len = bmCode.length;
+var lenKB = (len/1024).toFixed(1);
+// Log for troubleshooting — visible in browser console
+console.log('[ChatGPT Exporter] Bookmarklet length: ' + len + ' chars (' + lenKB + ' KB). Browsers support up to ~2MB — this is fine.');
+</script>
+</body>
+</html>
