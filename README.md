@@ -4,6 +4,7 @@ Export all your ChatGPT conversations at the click of a button — works with En
 ## Credits
 
 Inspired by [ocombe's ChatGPT exporter gist](https://gist.github.com/ocombe/1d7604bd29a91ceb716304ef8b5aa4b5), which identified the relevant ChatGPT backend API endpoints.
+Created with Claude Cowork.
 
 ## How it works
 
