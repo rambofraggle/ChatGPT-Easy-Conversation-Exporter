@@ -1,19 +1,13 @@
 # ChatGPT-Easy-Conversation-Exporter
 Export all your ChatGPT conversations at the click of a button — works with Enterprise, Team, and Business accounts where the built-in ChatGPT export feature is disabled. No installs. No command line. Nothing to type.
 
----
-
 ## Credits
 
 Inspired by [ocombe's ChatGPT exporter gist](https://gist.github.com/ocombe/1d7604bd29a91ceb716304ef8b5aa4b5), which identified the relevant ChatGPT backend API endpoints.
 
----
-
 ## How it works
 
 A one-time setup adds a button to your browser's bookmarks bar. After that, you go to chatgpt.com, click the button, and your conversations download automatically as a ZIP file.
-
----
 
 ## Quick start
 
@@ -28,15 +22,11 @@ For detailed step-by-step instructions with screenshots, open the guide for your
 - 🪟 `Windows-Guide.html`
 - 🍎 `Mac-Guide.html`
 
----
-
 ## What gets exported
 
 - **JSON** — raw conversation data from the ChatGPT API
 - **Markdown** — clean, readable text files, one per conversation
 - Everything is bundled into a single **ZIP file**
-
----
 
 ## Browser compatibility
 
@@ -47,8 +37,6 @@ For detailed step-by-step instructions with screenshots, open the guide for your
 | Firefox | ✅ | ✅ |
 | Safari | — | ✅ |
 | Brave | ✅ | ✅ |
-
----
 
 ## Notes
 
